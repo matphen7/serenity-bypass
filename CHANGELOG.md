@@ -4,6 +4,13 @@ Semua catatan pembaruan resmi **Seren1ty Bypasser**.
 
 ---
 
+## [v2.0.2] — Hotfix Force Close Startup (Samsung / Android 10–15)
+
+- **Perbaikan Force Close saat Aplikasi Dibuka:** Mengubah linking library native proteksi menjadi statis sepenuhnya (`static-libstdc++`) tanpa dependensi eksternal `libc++_shared.so`, sehingga aplikasi dapat berjalan normal di Samsung maupun perangkat Android lainnya.
+- **Kompatibilitas Page Size 16KB:** Menambahkan alignment ELF 16KB untuk kompatibilitas perangkat Android terbaru serta menyembunyikan seluruh simbol STL statis.
+
+---
+
 ## [v2.0.1] — Script Terminal & ANSI Output Fix
 
 - **Perbaikan Tampilan Terminal Run Script & Clear Script:** Menambahkan skala font otomatis (`clamp`) dan `white-space: pre` dengan font monospace tetap tanpa ligature agar banner ASCII tampil utuh sejajar di layar HP tanpa terpotong atau terlipat.

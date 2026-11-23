@@ -4,6 +4,15 @@ Semua catatan pembaruan resmi **Seren1ty Bypasser**.
 
 ---
 
+## [v2.0.1] — Script Terminal & ANSI Output Fix
+
+- **Perbaikan Tampilan Terminal Run Script & Clear Script:** Menambahkan skala font otomatis (`clamp`) dan `white-space: pre` dengan font monospace tetap tanpa ligature agar banner ASCII tampil utuh sejajar di layar HP tanpa terpotong atau terlipat.
+- **Dukungan Warna ANSI Asli:** Output terminal kini merender warna asli (`[ok]` hijau, `[err]` merah, header putih/abu-abu, serta badge status `RUN` / `EXIT`).
+- **Kompatibilitas Shell Android & Clear Screen:** Memperbaiki perilaku `echo -e` dan `clear()` pada shell bawaan Android (`/system/bin/sh`) serta menghilangkan cetakan banner menu duplikat saat script berjalan otomatis.
+- **Pembaruan Output Clear Script:** Menyeragamkan tampilan progres **Clear Script** dengan warna status dan header ASCII yang rapi.
+
+---
+
 ## [v2.0.0] — Release Build
 
 ### Keamanan & Proteksi Rilis
